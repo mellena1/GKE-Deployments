@@ -1,0 +1,14 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: grafana
+  namespace: monitoring
+spec:
+  releaseName: grafana
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: grafana
+    version: 1.17.4
+  values: {}
+...
