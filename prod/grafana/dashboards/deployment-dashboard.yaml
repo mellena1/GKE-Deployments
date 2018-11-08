@@ -23,6 +23,7 @@ data:
             "annotations": {
                 "list": []
             },
+            "title": "Deployment Dashboard",
             "editable": true,
             "graphTooltip": 1,
             "hideControls": false,
