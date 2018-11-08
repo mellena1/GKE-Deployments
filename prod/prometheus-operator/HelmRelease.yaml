@@ -2,13 +2,13 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: prometheus
+  name: prometheus-operator
   namespace: monitoring
 spec:
-  releaseName: prometheus
+  releaseName: prometheus-operator
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: prometheus
-    version: 7.4.0
+    name: prometheus-operator
+    version: 0.1.16
   values: {}
 ...
