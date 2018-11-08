@@ -12,7 +12,8 @@ spec:
     version: 1.17.4
   values:
     datasources:
-      - name: Prometheus
+      prometheus:
+        name: Prometheus
         type: prometheus
         access: proxy
         isDefault: true
