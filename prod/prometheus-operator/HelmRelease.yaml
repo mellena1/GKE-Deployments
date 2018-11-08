@@ -15,4 +15,22 @@ spec:
       enabled: true
     coreDns:
       enabled: false
+    prometheusOperator:
+      resources:
+        requests:
+          memory: 30Mi
+    prometheus:
+      prometheusSpec:
+        resources:
+          requests:
+            memory: 275Mi
+    alertmanager:
+      alertmanagerSpec:
+        resources:
+          requests:
+            memory: 25Mi
+    grafana:
+      resources:
+        requests:
+          memory: 100Mi
 ...
