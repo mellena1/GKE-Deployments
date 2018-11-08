@@ -1,0 +1,14 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: prometheus
+  namespace: monitoring
+spec:
+  releaseName: prometheus
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: prometheus
+    version: 7.4.0
+  values: {}
+...
