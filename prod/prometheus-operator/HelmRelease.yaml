@@ -14,5 +14,5 @@ spec:
     kubeDns:
       enabled: true
     coreDns:
-      enable: false
+      enabled: false
 ...
