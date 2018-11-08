@@ -1,0 +1,21 @@
+helmOperator:
+  create: true
+  repository: quay.io/squaremo/helm-operator
+  tag: 5a7b7fe
+  resources:
+    requests:
+      memory: 50Mi
+    limits:
+      memory: 50Mi
+image:
+  repository: quay.io/squaremo/flux
+  tag: 5a7b7fe
+git:
+  url: ssh://git@github.com/mellena1/GKE-Deployments
+  branch: master
+  path: prod
+resources:
+  requests:
+    memory: 50Mi
+  limits:
+    memory: 50Mi
