@@ -33,9 +33,4 @@ spec:
       resources:
         requests:
           memory: 100Mi
-      dashboards:
-        deployments-dashboard:
-          gnetId: 8588
-          revision: 1
-          datasource: prometheus
 ...
