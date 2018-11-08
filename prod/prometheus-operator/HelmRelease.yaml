@@ -10,5 +10,9 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: prometheus-operator
     version: 0.1.16
-  values: {}
+  values:
+    kubeDns:
+      enabled: true
+    coreDns:
+      enable: false
 ...
