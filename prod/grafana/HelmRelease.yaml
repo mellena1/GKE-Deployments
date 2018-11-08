@@ -21,4 +21,5 @@ spec:
           access: proxy
           isDefault: true
           url: http://prometheus-server
+    dashboards: {{ (.Files.Glob "dashboards/*.json").AsConfig }}
 ...
