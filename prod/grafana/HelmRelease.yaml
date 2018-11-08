@@ -10,5 +10,10 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: grafana
     version: 1.17.4
-  values: {}
+  values:
+    datasources:
+      - name: Prometheus
+        type: prometheus
+        default: true
+        url: http://prometheus-server
 ...
