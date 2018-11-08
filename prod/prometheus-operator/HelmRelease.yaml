@@ -33,4 +33,6 @@ spec:
       resources:
         requests:
           memory: 100Mi
+      dashboards:
+        deployments-dashboard.json: https://grafana.com/api/dashboards/8588/revisions/1/download
 ...
