@@ -5,9 +5,7 @@ helmOperator:
   tag: 5a7b7fe
   resources:
     requests:
-      memory: 50Mi
-    limits:
-      memory: 50Mi
+      memory: 100Mi
 image:
   repository: quay.io/squaremo/flux
   tag: 5a7b7fe
@@ -17,7 +15,5 @@ git:
   path: prod
 resources:
   requests:
-    memory: 50Mi
-  limits:
-    memory: 50Mi
+    memory: 100Mi
 ...
