@@ -1,4 +1,4 @@
 #!/bin/bash
 
 kubectl apply -f rbac-config.yaml
-helm init --service-account tiller
+helm init --service-account tiller --wait
