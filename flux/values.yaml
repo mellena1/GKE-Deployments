@@ -1,14 +1,14 @@
 ---
 helmOperator:
   create: true
-  repository: quay.io/squaremo/helm-operator
-  tag: 5a7b7fe
+  repository: quay.io/weaveworks/helm-operator
+  tag: "0.5.2"
   resources:
     requests:
       memory: 100Mi
 image:
-  repository: quay.io/squaremo/flux
-  tag: 5a7b7fe
+  repository: quay.io/weaveworks/flux
+  tag: "1.8.2"
 git:
   url: ssh://git@github.com/mellena1/GKE-Deployments
   branch: master

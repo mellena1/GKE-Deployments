@@ -3,7 +3,7 @@ apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: cert-manager
-  namespace: kube-system
+  namespace: devops
 spec:
   releaseName: cert-manager
   chart:

@@ -6,7 +6,7 @@ metadata:
   labels:
     app: flux
     release: prometheus-operator
-  namespace: monitoring
+  namespace: devops
 spec:
   selector:
     matchLabels:
