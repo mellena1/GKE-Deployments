@@ -31,6 +31,20 @@ spec:
           requests:
             memory: 25Mi
     grafana:
+      ingress:
+        enabled: true
+        annotations:
+          ingress.kubernetes.io/ssl-redirect: "true"
+          kubernetes.io/tls-acme: "true"
+          certmanager.k8s.io/cluster-issuer: letsencrypt-staging
+          kubernetes.io/ingress.class: "nginx"
+        tls:
+        - hosts:
+          - metrics.andrewmellen.org
+          secretName: letsencrypt-staging
+        hosts:
+        - metrics.andrewmellen.org
+
       resources:
         requests:
           memory: 100Mi
