@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: Nginx-Ingress-Dashbord
+  name: prometheus-operator-grafana-dashboard-nginx-ingress
   labels:
     grafana_dashboard: "1"
   namespace: devops
