@@ -10,6 +10,8 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: prometheus-operator
     version: 1.4.0
+  valueFileSecrets:
+  - name: "grafana-password"
   values:
     kubeDns:
       enabled: true
