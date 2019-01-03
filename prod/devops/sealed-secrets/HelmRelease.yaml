@@ -11,5 +11,9 @@ spec:
     name: sealed-secrets
     version: 1.0.1
   values:
-    
+    image:
+      repository: quay.io/bitnami/sealed-secrets-controller
+      tag: v0.7.0
+    crd:
+      keep: false    
 ...
