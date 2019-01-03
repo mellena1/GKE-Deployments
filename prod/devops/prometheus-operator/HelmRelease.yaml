@@ -7,7 +7,7 @@ metadata:
 spec:
   releaseName: prometheus-operator
   chart:
-    git: git@github.com/mellena1/charts
+    git: git@github.com:mellena1/charts
     ref: feature/match-all-svcmonitors
     path: stable/prometheus-operator
     # repository: https://kubernetes-charts.storage.googleapis.com/
