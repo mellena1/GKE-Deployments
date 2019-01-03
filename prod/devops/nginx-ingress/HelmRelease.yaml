@@ -20,7 +20,7 @@ spec:
       metrics:
         enabled: true
         serviceMonitor:
-          enable: true
+          enabled: true
       serviceAccount:
         create: true
 ...
