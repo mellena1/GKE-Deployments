@@ -15,4 +15,12 @@ spec:
       image:
         repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
         tag: 0.21.0
+      stats:
+        enabled: true
+      metrics:
+        enabled: true
+        serviceMonitor:
+          enable: true
+      serviceAccount:
+        create: true
 ...
