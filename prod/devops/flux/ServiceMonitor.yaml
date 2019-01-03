@@ -13,7 +13,7 @@ spec:
       release: flux
   namespaceSelector:
     matchNames:
-      - "flux"
+      - "devops"
   endpoints:
   - port: http
     interval: 15s

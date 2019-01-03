@@ -24,6 +24,7 @@ spec:
       prometheusSpec:
         serviceMonitorSelector: {}
         serviceMonitorNamespaceSelector: {}
+        serviceMonitorSelectorNilUsesHelmValues: false
         resources:
           requests:
             memory: 275Mi
