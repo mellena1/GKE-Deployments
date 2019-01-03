@@ -16,6 +16,7 @@ spec:
     coreDns:
       enabled: false
     prometheusOperator:
+      cleanupCustomResource: true
       resources:
         requests:
           memory: 30Mi
