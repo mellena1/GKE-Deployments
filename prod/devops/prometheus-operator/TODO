@@ -1,1 +1,0 @@
-Currently the `serviceMonitorSelector: {}` is broken because of the templates/prometheus/prometheus.yaml file in the helm/charts repo does a conditional on that var, and {} equates to false. This results in nothing getting added to the yaml. Need to add a else condition and PR.
