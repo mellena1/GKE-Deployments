@@ -22,6 +22,8 @@ spec:
           memory: 30Mi
     prometheus:
       prometheusSpec:
+        serviceMonitorSelector: {}
+        serviceMonitorNamespaceSelector: {}
         resources:
           requests:
             memory: 275Mi
