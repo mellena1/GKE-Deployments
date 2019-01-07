@@ -46,7 +46,7 @@ spec:
         tls:
         - hosts:
           - metrics.andrewmellen.org
-          secretName: letsencrypt-prod
+          secretName: prometheus-operator-grafana-letsencrypt-prod
         hosts:
         - metrics.andrewmellen.org
       resources:
