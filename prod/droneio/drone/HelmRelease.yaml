@@ -9,7 +9,7 @@ spec:
   chart:
     git: git@github.com:Adaptly/charts
     ref: pc-drone-1
-    path: charts/stable/drone
+    path: stable/drone
   values:
     server:
       host: ci.andrewmellen.org
