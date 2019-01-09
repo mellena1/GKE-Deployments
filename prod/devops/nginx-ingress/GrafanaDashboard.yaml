@@ -4,7 +4,7 @@ metadata:
   name: prometheus-operator-grafana-dashboard-nginx-ingress
   labels:
     grafana_dashboard: "1"
-  namespace: devops
+  namespace: metrics
 data:
   grafana-dashboard-nginx-ingress.json: |
     {
