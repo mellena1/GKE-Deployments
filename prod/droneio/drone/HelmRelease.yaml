@@ -23,7 +23,7 @@ spec:
     cronjob:
       enabled: true
     persistence:
-      enabled: false
+      enabled: true
     ingress:
       enabled: true
       annotations:
