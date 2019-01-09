@@ -29,12 +29,12 @@ spec:
       annotations:
         ingress.kubernetes.io/ssl-redirect: "true"
         kubernetes.io/tls-acme: "true"
-        certmanager.k8s.io/cluster-issuer: letsencrypt-staging
+        certmanager.k8s.io/cluster-issuer: letsencrypt-prod
         kubernetes.io/ingress.class: "nginx"
       tls:
       - hosts:
         - ci.andrewmellen.org
-        secretName: drone-letsencrypt-staging
+        secretName: drone-letsencrypt-prod
       hosts:
       - ci.andrewmellen.org
 ...
