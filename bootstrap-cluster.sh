@@ -11,14 +11,19 @@ else
 fi
 
 # Install helm
-cd helm
+cd bootstrap/helm
 ./install-helm.sh
-cd ..
+cd ../..
+
+# Add secret for sealed-secrets
+cd bootstrap/sealed-secrets
+./add-key.sh
+cd ../..
 
 # Install flux
-cd flux
+cd bootstrap/flux
 ./install-flux.sh
-cd ..
+cd ../..
 
 # Output Flux git deploy key and copy to keyboard
 FLUX_POD=$(kubectl get pods --namespace flux -l "app=flux,release=flux" -o jsonpath="{.items[0].metadata.name}")
