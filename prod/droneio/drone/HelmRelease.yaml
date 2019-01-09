@@ -12,7 +12,6 @@ spec:
     path: stable/drone
   values:
     server:
-      host: ci.andrewmellen.org
       envSecrets:
         drone-secrets:
         - DRONE_GITHUB_CLIENT_ID
