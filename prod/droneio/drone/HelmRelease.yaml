@@ -1,0 +1,39 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: drone
+  namespace: droneio
+spec:
+  releaseName: drone
+  chart:
+    git: git@github.com:Adaptly/charts
+    ref: pc-drone-1
+    path: charts/stable/drone
+  values:
+    server:
+      host: ci.andrewmellen.org
+      envSecrets:
+        drone-secrets:
+        - DRONE_GITHUB_CLIENT_ID
+        - DRONE_GITHUB_CLIENT_SECRET
+      env:
+        DRONE_USER_FILTER: mellena1
+    cronjob:
+      enabled: true
+    persistence:
+      enabled: false
+    ingress:
+      enabled: true
+      annotations:
+        ingress.kubernetes.io/ssl-redirect: "true"
+        kubernetes.io/tls-acme: "true"
+        certmanager.k8s.io/cluster-issuer: letsencrypt-staging
+        kubernetes.io/ingress.class: "nginx"
+      tls:
+      - hosts:
+        - ci.andrewmellen.org
+        secretName: drone-letsencrypt-staging
+      hosts:
+      - ci.andrewmellen.org
+...
