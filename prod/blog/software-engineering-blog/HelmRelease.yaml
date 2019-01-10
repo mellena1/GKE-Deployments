@@ -9,7 +9,7 @@ spec:
   chart:
     repository: https://charts.andrewmellen.org/
     name: software-engineering-blog
-    version: "0.1.0"
+    version: "0.1.1"
   values:
     image:
       repository: mellena1/software-engineering-blog
