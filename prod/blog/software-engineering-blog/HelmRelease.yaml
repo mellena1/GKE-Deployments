@@ -4,6 +4,9 @@ kind: HelmRelease
 metadata:
   name: software-engineering-blog
   namespace: blog
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: "semver:*"
 spec:
   releaseName: software-engineering-blog
   chart:
