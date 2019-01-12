@@ -11,6 +11,10 @@ spec:
     ref: pc-drone-1
     path: stable/drone
   values:
+    images:
+      server:
+        repository: docker.io/drone/drone
+        tag: 1.0.0-rc.4
     server:
       host: ci.andrewmellen.org
       scheme: https
