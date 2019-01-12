@@ -36,9 +36,9 @@ spec:
           requests:
             memory: 25Mi
     grafana:
-      grafana.ini: |
-        [server]
-        domain = https://metrics.andrewmellen.org
+      grafana.ini:
+        server:
+          domain: https://metrics.andrewmellen.org
       ingress:
         enabled: true
         annotations:
