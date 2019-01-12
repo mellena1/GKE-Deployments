@@ -38,9 +38,7 @@ spec:
     grafana:
       grafana.ini:
         server:
-          domain: metrics.andrewmellen.org
-          protocol: https
-          http_port: 443
+          root_url: https://metrics.andrewmellen.org
       ingress:
         enabled: true
         annotations:
