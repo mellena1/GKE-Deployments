@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: mellena1/software-engineering-blog
-      tag: 1.1.0
+      tag: 1.2.0
     ingress:
       enabled: true
       annotations:
