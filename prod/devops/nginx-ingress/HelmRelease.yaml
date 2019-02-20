@@ -21,11 +21,6 @@ spec:
         enabled: true
         serviceMonitor:
           enabled: true
-      service:
-        type: NodePort
-        targetPorts:
-          http: 80
-          https: 443
       serviceAccount:
         create: true
       tolerations:
