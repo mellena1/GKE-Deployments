@@ -23,7 +23,7 @@ spec:
           enabled: true
       service:
         type: NodePort
-        nodePorts:
+        targetPorts:
           http: 80
           https: 443
       serviceAccount:
