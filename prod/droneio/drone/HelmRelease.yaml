@@ -15,13 +15,15 @@ spec:
       server:
         repository: docker.io/drone/drone
         tag: 1.0.0-rc.4
+    sourceControl:
+      provider: github
+      secret: drone-secrets
+      github:
+        clientID: 21e89559d6c6ed03d4a8
+        clientSecretKey: DRONE_GITHUB_CLIENT_SECRET
     server:
       host: ci.andrewmellen.org
       scheme: https
-      envSecrets:
-        drone-secrets:
-        - DRONE_GITHUB_CLIENT_ID
-        - DRONE_GITHUB_CLIENT_SECRET
       env:
         DRONE_USER_FILTER: mellena1
     cronjob:
