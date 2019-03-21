@@ -7,9 +7,9 @@ metadata:
 spec:
   releaseName: drone
   chart:
-    git: git@github.com:Adaptly/charts
-    ref: pc-drone-1
-    path: stable/drone
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: drone
+    version: 2.0.0-rc.8
   values:
     images:
       server:
@@ -28,6 +28,7 @@ spec:
       enabled: true
     persistence:
       enabled: true
+      size: 10Gi
     ingress:
       enabled: true
       annotations:
