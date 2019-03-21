@@ -14,7 +14,7 @@ spec:
     images:
       server:
         repository: docker.io/drone/drone
-        tag: 1.0.0-rc.4
+        tag: "1.0.0"
     sourceControl:
       provider: github
       secret: drone-secrets
@@ -30,7 +30,7 @@ spec:
       enabled: true
     persistence:
       enabled: true
-      size: 10Gi
+      size: 1Gi
     ingress:
       enabled: true
       annotations:
