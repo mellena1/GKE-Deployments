@@ -23,7 +23,7 @@ spec:
         clientSecretKey: DRONE_GITHUB_CLIENT_SECRET
     server:
       host: ci.andrewmellen.org
-      scheme: https
+      protocol: https
       env:
         DRONE_USER_FILTER: mellena1
     cronjob:
